@@ -1,8 +1,5 @@
 import streamlit as st
 
-# 暂时注释掉页面配置，避免冲突
-# st.set_page_config(page_title="AI教学助手", page_icon="🤖")
-
 st.title("🤖 AI智能教学助手")
 st.write("🧪 依赖测试阶段")
 
