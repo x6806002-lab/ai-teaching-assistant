@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.set_page_config(page_title="AI教学助手", page_icon="🤖")
+# 暂时注释掉页面配置，避免冲突
+# st.set_page_config(page_title="AI教学助手", page_icon="🤖")
 
 st.title("🤖 AI智能教学助手")
 st.write("🧪 依赖测试阶段")
@@ -8,7 +9,7 @@ st.write("🧪 依赖测试阶段")
 # 测试所有核心依赖
 st.write("### 📦 依赖导入测试:")
 
-dependencies = {  # ✅ 改为字典
+dependencies = {
     "pandas": "pd",
     "numpy": "np",
     "networkx": "nx",
@@ -19,7 +20,7 @@ dependencies = {  # ✅ 改为字典
 
 all_success = True
 
-for lib_name, import_name in dependencies.items():  # ✅ 字典可以用.items()
+for lib_name, import_name in dependencies.items():
     try:
         if lib_name == 'sklearn':
             import sklearn
