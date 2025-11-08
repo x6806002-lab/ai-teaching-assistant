@@ -8,18 +8,18 @@ st.write("🧪 依赖测试阶段")
 # 测试所有核心依赖
 st.write("### 📦 依赖导入测试:")
 
-dependencies = [
-    ("pandas", "pd"),
-    ("numpy", "np"),
-    ("networkx", "nx"),
-    ("sklearn", "sklearn"),
-    ("matplotlib", "plt"),
-    ("seaborn", "sns")
-]
+dependencies = {  # ✅ 改为字典
+    "pandas": "pd",
+    "numpy": "np",
+    "networkx": "nx",
+    "sklearn": "sklearn",
+    "matplotlib": "plt",
+    "seaborn": "sns"
+}
 
 all_success = True
 
-for lib_name, import_name in dependencies.items():
+for lib_name, import_name in dependencies.items():  # ✅ 字典可以用.items()
     try:
         if lib_name == 'sklearn':
             import sklearn
