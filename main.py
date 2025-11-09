@@ -7,7 +7,7 @@ from data_loader import load_all_data
 from keyword_extractor import KeywordExtractor
 from knowledge_analyzer import KnowledgeAnalyzer
 from literacy_analyzer import LiteracyAnalyzer
-from .knowledge_graph import KnowledgeGraphBuilder
+from your_subdirectory.knowledge_graph import KnowledgeGraphBuilder
 
 # 全局变量
 LOADED_DATA = None
@@ -147,4 +147,5 @@ print(f"Accuracy: {accuracy}")
     print("=" * 50)
     print(f"关键词：{result['analyzed_keywords']}")
     print(f"\n摘要：\n{result['summary']}")
+
 
